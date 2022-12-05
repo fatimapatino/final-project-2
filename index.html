@@ -21,38 +21,51 @@
           </div>
         </div>
       </div>
-      <div class="grid-container">
-        <div class="grid-item-e">e
-          <div class="layer-e"></div>
+
+      <section>
+        <div class="grid-container">
+          <div class="grid-item-e">e
+            <div class="layer-e"></div>
+          </div>
+          <div class="grid-item-x">x</div>
+          <div class="grid-item-p">!</div>
+          <div class="grid-item-l">l</div>
+          <div class="grid-item-i">i</div>
+          <div class="grid-item-b">b</div>
+          <div class="grid-item-r">r</div>
+          <div class="grid-item-ii">i</div>
+          <div class="grid-item-s">s</div>
         </div>
-        <div class="grid-item-x">x</div>
-        <div class="grid-item-p">!</div>
-        <div class="grid-item-l">l</div>
-        <div class="grid-item-i">i</div>
-        <div class="grid-item-b">b</div>
-        <div class="grid-item-r">r</div>
-        <div class="grid-item-ii">i</div>
-        <div class="grid-item-s">s</div>
-      </div>
+      </section>
 
       <section class="what">
         <div class="content-left">
           <h1>Who are we?</h1>
           <p>Ex Libris is the highest grossing student run cafe at UChicago. We are located on the first floor of the Regenstein Library. Come in to fuel up, for a study break, or just to hang out!</p>
         </div>
-        <div class="content-right">
-          <img src="friends-mugs.jpg" alt="friends mugs" class="map-img">
-        </div>
-
       </section>
+      <div id="scroll-container">
+        <div id="scroll-text">This is scrolling text.</div>
+      </div>
     </div>
   </body>
 
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    @font-face {
+      font-family: "Roboto Mono";
+      src: url("RobotoMono.ttf");
+    }
+
     .nav-wrapper {
       display: flex;
       justify-content: space-between;
       padding: 38px;
+      font-family: "Roboto Mono", serif;
     }
 
     .left-side {
@@ -61,13 +74,20 @@
 
     .nav-wrapper>.left-side>div {
       margin-right: 20px;
-      font-size: 0.9em;
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .nav-wrapper>.right-side>div {
+      font-size: 20px;
+      font-weight: bold;
       text-transform: uppercase;
     }
 
     .nav-link-wrapper {
       height: 22px;
-      border-bottom: 1px solid tansparent;
+      border-bottom: 3px solid tansparent;
       transition: border-bottom 0.5s;
     }
 
@@ -78,7 +98,7 @@
     }
 
     .nav-link-wrapper:hover {
-      border-bottom: 1px solid black;
+      border-bottom: 3px solid black;
     }
 
     .nav-link-wrapper a:hover {
@@ -97,11 +117,21 @@
 
     .grid-item-e {
       background-color: #e05956;
+      opacity: 1;
       color: white;
       font-size: 200px;
       font-weight: 600;
       text-align: center;
       line-height: 160px;
+      transition: 0.5s;
+    }
+
+    .grid-item-e:hover {
+      background-image: url(friends-mugs.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      opacity: 0.75;
+      /*       object-fit: cover; */
     }
 
     .grid-item-x {
@@ -111,6 +141,16 @@
       font-weight: 600;
       text-align: center;
       line-height: 160px;
+      transition: 0.5s;
+    }
+
+    .grid-item-x:hover {
+      background-image: url(plant-coffee.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      object-position: top;
+      opacity: 0.5;
     }
 
     .grid-item-p {
@@ -119,6 +159,15 @@
       font-weight: 600;
       text-align: center;
       line-height: 160px;
+      transition: 0.5s;
+    }
+
+    .grid-item-p:hover {
+      background-image: url(color-mugs.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      opacity: 0.5;
     }
 
     .grid-item-l {
@@ -128,6 +177,15 @@
       font-weight: 600;
       text-align: center;
       line-height: 160px;
+      transition: 0.5s;
+    }
+
+    .grid-item-l:hover {
+      background-image: url(dark-coffee.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      opacity: 0.5;
     }
 
     .grid-item-i {
@@ -137,6 +195,15 @@
       font-weight: 600;
       text-align: center;
       line-height: 160px;
+      transition: 0.5s;
+    }
+
+    .grid-item-i:hover {
+      background-image: url(ex-lib-cafe.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      opacity: 0.5;
     }
 
     .grid-item-b {
@@ -146,6 +213,15 @@
       font-weight: 600;
       text-align: center;
       line-height: 160px;
+      transition: 0.5s;
+    }
+
+    .grid-item-b:hover {
+      background-image: url(fall-reg.webp);
+      background-size: cover;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      opacity: 0.5;
     }
 
     .grid-item-r {
@@ -155,6 +231,16 @@
       font-weight: 600;
       text-align: center;
       line-height: 160px;
+      transition: 0.5s;
+    }
+
+    .grid-item-r:hover {
+      background-image: url(reg-entrance.webp);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      object-position: bottom;
+      opacity: 0.5;
     }
 
     .grid-item-ii {
@@ -164,6 +250,15 @@
       font-weight: 600;
       text-align: center;
       line-height: 160px;
+      transition: 0.5s;
+    }
+
+    .grid-item-ii:hover {
+      background-image: url(white-mug.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      opacity: 0.5;
     }
 
     .grid-item-s {
@@ -173,32 +268,62 @@
       font-weight: 600;
       text-align: center;
       line-height: 160px;
+      transition: 0.5s;
+    }
+
+    .grid-item-s:hover {
+      background-image: url(white-table.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      opacity: 0.5;
     }
 
     .what {
+      background-image: url(reg-map.png);
       position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      background-repeat: no-repeat;
+      height: 400px;
+      font-family: "Roboto Mono", serif;
+      padding: 70px 0;
+      text-align: center;
     }
-    .map-img {
-      width: 400px;
-      height: 300px;
-    }
-    .content-left {
-      width: 30%;
-      align-content: left;
-    }
+
     .what h1 {
       font-size: 60px;
-      font-weight: 400;
+      font-weight: bold;
     }
+
     .what p {
       font-size: 20px;
-      font-weight: 400;
       margin: 30px 0;
     }
-    
+
+    #scroll-container {
+      height: 100px;
+      border: 3px solid white;
+      background: green;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    #scroll-text {
+      transform: translateX(100%);
+      animation: animation 20s linear infinite;
+      color: white;
+      font-family: "Roboto Mono", serif;
+      font-weight: bold;
+      font-size: 30px;
+
+    }
+
+    @keyframes animation {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
   </style>
 </html>
