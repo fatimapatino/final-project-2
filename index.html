@@ -45,8 +45,31 @@
         </div>
       </section>
       <div id="scroll-container">
-        <div id="scroll-text">This is scrolling text.</div>
+        <div id="scroll-text">WE HAVE FEAUTRED DRINKS</div>
       </div>
+
+      <section class="featured-drinks">
+        <div class="photobanner">
+
+          <img class="first" src="ppc.jpg" alt="ppc">
+          <img src="great-fire.jpg" alt="great fire">
+
+          <img src="brain-fog.jpg" alt="brain fog">
+
+          <img src="bpond.jpg" alt="bpond">
+
+          <img src="econ.jpg" alt="econ bro">
+
+          <img src="maroon.jpg" alt="maroon mocha">
+
+        </div>
+      </section>
+      <section class="social-media">
+				<h1>
+          Follow us on Instagram!
+        </h1>
+      </section>
+
     </div>
   </body>
 
@@ -300,11 +323,11 @@
     }
 
     #scroll-container {
-      height: 100px;
+      height: 90px;
       border: 3px solid white;
-      background: green;
+      background: silver;
       border-radius: 10px;
-      overflow: hidden;
+      overflow: visible;
     }
 
     #scroll-text {
@@ -313,17 +336,69 @@
       color: white;
       font-family: "Roboto Mono", serif;
       font-weight: bold;
-      font-size: 30px;
-
+      font-size: 50px;
+      padding-top: 10px;
     }
 
     @keyframes animation {
       from {
         transform: translateX(100%);
       }
+
       to {
         transform: translateX(-100%);
       }
+    }
+
+    .featured-drinks {
+      width: 100%;
+      overflow: hidden;
+      margin: 10px auto;
+      background: white;
+    }
+
+    .photobanner {
+      height: 220px;
+      width: 8640px;
+      margin-bottom: 80px;
+    }
+
+    .first {
+      animation: bannermove 30s linear infinite;
+    }
+
+   @keyframes bannermove {
+ 0% {margin-left: 0px;}
+ 100% {margin-left: -2130px;}
+}
+
+    .photobanner img {
+      transition: all 1s ease;
+      height: 300px;
+    }
+
+    .photobanner img:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+      box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .social-media {
+      position: relative;
+     	background-image: url(coffee-gif.gif);
+      background-repeat: no-repeat;
+      height: 400px;
+      width: 100%;
+      background-size: cover;
+    }
+    
+    .social-media h1 {
+      color: white;
+      font-family: "Roboto Mono", serif;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 40px;
+      font-size: 30px;
     }
   </style>
 </html>
