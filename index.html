@@ -297,17 +297,18 @@
 
     .photobanner {
       position: relative;
-      height: 300px;
-      background: blue;
+      height: 400px;
+      background: white;
     }
     
-    .pb1, .pb2 {
+    .pb1, .pb2, {
       position: absolute;
       display: flex;
+      padding-top: 50px;
     }
     .pb1 {
       animation-name: bannermove; 
-      animation-duration: 40s; 
+      animation-duration: 25s; 
       animation-timing-function: linear;
       animation-iteration-count: infinite;
     }
@@ -315,25 +316,22 @@
 /*       display: none; */
     	left: 100%;
       animation-name: bannermove2; 
-      animation-duration: 40s; 
+      animation-duration: 25s; 
       animation-timing-function: linear;
       animation-iteration-count: infinite;
-      animation-delay: 15s
+      animation-delay: 13s
     }
 
    @keyframes bannermove {
-    	0% {left: 100%;}
-     	25% {left: calc(0% - 361.25px)}
-    	50% {left: calc(0% - 722.5px);}
-     	75% {left: calc(0% - 1083.75px)}
-    	100% {left: calc(0% - 1445px);}
+     	0% {left: 100%;}
+    	80% {left: calc(0% - 1446px);}
+    	100% {left: calc(0% - 1446px);}
 }
      @keyframes bannermove2 {
-    	0% {left: 100%;}
-     	25% {left: calc(0% - 361.25px)}
-    	50% {left: calc(0% - 722.5px);} 
-     	75% {left: calc(0% - 1083.75px)}
-    	100% {left: calc(0% - 1445px);}
+    	 0% {left: 100%;}
+       80% {left: calc(0% - 1446px);}
+       100% {left: calc(0% - 1446px);}
+       
 /*        0% {left: 100%;}
     	50% {left: calc(0% - 1445px);}
     	100% {left: calc(0% - 1445px);} */
