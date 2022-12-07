@@ -83,7 +83,7 @@
     }
 
     .grid-item-e:hover {
-      background-image: url(photo.jpeg);
+      background-image: url(latte-heart.webp);
       background-size: cover;
       background-repeat: no-repeat;
       opacity: 0.75;
@@ -101,7 +101,7 @@
     }
 
     .grid-item-x:hover {
-      background-image: url(plant-coffee.jpg);
+      background-image: url(beans.jpeg);
       background-size: cover;
       background-repeat: no-repeat;
       object-fit: cover;
@@ -117,9 +117,14 @@
       line-height: 160px;
       transition: 0.5s;
     }
+    .grid-item-p img {
+      height: 120px;
+      padding-top: 30px;
+      padding-left: 10px;
+    }
 
     .grid-item-p:hover {
-      background-image: url(color-mugs.jpg);
+      background-image: url(circle.jpeg);
       background-size: 100%;
       background-repeat: no-repeat;
       object-fit: cover;
@@ -132,12 +137,12 @@
       font-size: 200px;
       font-weight: 600;
       text-align: center;
-      line-height: 160px;
+      line-height: 200px;
       transition: 0.5s;
     }
 
     .grid-item-l:hover {
-      background-image: url(dark-coffee.jpg);
+      background-image: url(dark-cup.webp);
       background-size: 100%;
       background-repeat: no-repeat;
       object-fit: cover;
@@ -150,7 +155,7 @@
       font-size: 200px;
       font-weight: 600;
       text-align: center;
-      line-height: 160px;
+      line-height: 200px;
       transition: 0.5s;
     }
 
@@ -168,7 +173,7 @@
       font-size: 200px;
       font-weight: 600;
       text-align: center;
-      line-height: 160px;
+      line-height: 200px;
       transition: 0.5s;
     }
 
@@ -186,7 +191,7 @@
       font-size: 200px;
       font-weight: 600;
       text-align: center;
-      line-height: 160px;
+      line-height: 175px;
       transition: 0.5s;
     }
 
@@ -205,12 +210,12 @@
       font-size: 200px;
       font-weight: 600;
       text-align: center;
-      line-height: 160px;
+      line-height: 200px;
       transition: 0.5s;
     }
 
     .grid-item-ii:hover {
-      background-image: url(white-mug.jpg);
+      background-image: url(latte-coffee.jpeg);
       background-size: cover;
       background-repeat: no-repeat;
       object-fit: cover;
@@ -223,12 +228,12 @@
       font-size: 200px;
       font-weight: 600;
       text-align: center;
-      line-height: 160px;
+      line-height: 175px;
       transition: 0.5s;
     }
 
     .grid-item-s:hover {
-      background-image: url(white-table.jpg);
+      background-image: url(trio.jpeg);
       background-size: 100%;
       background-repeat: no-repeat;
       object-fit: cover;
@@ -236,13 +241,14 @@
     }
 
     .what {
-      background-image: url(reg-map.png);
       position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
+      background-image: url(multi-color.jpeg);
+      background-size: cover;
       background-repeat: no-repeat;
-      height: 400px;
+      height: 300px;
       font-family: "Roboto Mono", serif;
       padding: 70px 0;
       text-align: center;
@@ -255,14 +261,28 @@
       font-weight: bold;
       text-shadow: 1px 1px 2px grey;
       background: white;
+      border-radius: 10px;
     }
 
     .what p {
       font-size: 20px;
       margin: 30px 0;
-      text-shadow: 2px 2px 4px grey;
+      text-shadow: 1px 1px 2px grey;
       width: 80%;
-      
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .divider {
+      position: relative;
+      background-image: url(reg-map.png);
+      height: 400px;
+      background-size: cover;
+      background-position: center left;
+    }
+     #smile {
+      height: 150px;
+      transform: rotate(-10deg) translate(180px, 140px);
     }
 
     #scroll-container {
@@ -282,9 +302,9 @@
     }
 
     @keyframes animation {
-      from {transform: translateX(100%);
+      0% {transform: translateX(100%);
       }
-      to {transform: translateX(-100%);
+      100% {transform: translateX(-100%);
       }
     }
 
@@ -304,38 +324,34 @@
     .pb1, .pb2 {
       position: absolute;
       display: flex;
-      padding-top: 50px;
+      padding-top: 30px;
     }
     .pb1 {
       animation-name: bannermove; 
-      animation-duration: 25s; 
+      animation-duration: 26s; 
       animation-timing-function: linear;
       animation-iteration-count: infinite;
     }
     .pb2 {
-/*       display: none; */
     	left: 100%;
       animation-name: bannermove2; 
-      animation-duration: 25s; 
+      animation-duration: 26s; 
       animation-timing-function: linear;
       animation-iteration-count: infinite;
-      animation-delay: 13s
+      animation-delay: 13.2s
     }
 
    @keyframes bannermove {
      	0% {left: 100%;}
-    	80% {left: calc(0% - 1446px);}
+    	76% {left: calc(0% - 1446px);}
     	100% {left: calc(0% - 1446px);}
-}
+		}
      @keyframes bannermove2 {
     	 0% {left: 100%;}
-       80% {left: calc(0% - 1446px);}
+       76% {left: calc(0% - 1446px);}
        100% {left: calc(0% - 1446px);}
        
-/*        0% {left: 100%;}
-    	50% {left: calc(0% - 1445px);}
-    	100% {left: calc(0% - 1445px);} */
-}
+		}
   
 
     .photobanner img {
@@ -351,11 +367,11 @@
 
     .social-media {
       position: relative;
-     	background-image: url(coffee-gif.gif);
+     	background-image: url(liquid-trio.jpeg);
       background-repeat: no-repeat;
       height: 400px;
-      width: 100%;
       background-size: cover;
+      background-position: 30%;
     }
     
     .social-media h1 {
@@ -364,12 +380,17 @@
       font-weight: bold;
       text-align: center;
       padding-top: 40px;
-      font-size: 30px;
+      font-size: 40px;
     }
-    #smile {
+    
+    #insta {
+      position: absolute; 
       height: 150px;
-      transform: rotate(-20deg) translate(50px, 30px);
+      left: calc(50% - 75px);
+      bottom: calc(30% - 75px);
     }
+    
+   
   </style>
   
   <body>
@@ -392,11 +413,11 @@
 
       <section>
         <div class="grid-container">
-          <div class="grid-item-e">e
-            <div class="layer-e"></div>
-          </div>
+          <div class="grid-item-e">e</div>
           <div class="grid-item-x">x</div>
-          <div class="grid-item-p">!</div>
+          <div class="grid-item-p">
+          	<img src="mug icon.svg" alt="mug icon">
+          </div>
           <div class="grid-item-l">l</div>
           <div class="grid-item-i">i</div>
           <div class="grid-item-b">b</div>
@@ -409,10 +430,14 @@
       <section class="what">
           <h1>Who are we?</h1>
           <p>Ex Libris is the highest grossing student run cafe at UChicago. We are located on the first floor of the Regenstein Library. Come in to fuel up, for a study break, or just to hang out!</p>
-          <img id="smile" src="clear-mug-gif.gif" alt="smiling coffee mug">
       </section>
+      
+      <section class="divider">
+      	  <img id="smile" src="clear-mug-gif.gif" alt="smiling coffee mug">
+      </section>
+      
       <div id="scroll-container">
-        <div id="scroll-text">WE HAVE FEAUTRED DRINKS</div>
+        <div id="scroll-text">OUR FEAUTRED DRINKS</div>
       </div>
 
       <section class="featured-drinks">
@@ -441,6 +466,9 @@
 				<h1>
           Follow us on Instagram!
         </h1>
+        <a href="https://www.instagram.com/exlibriscafe/?hl=en" target="_blank">
+        <img id="insta" src="instalogo.png" alt="insta logo"> 
+        </a> 
       </section>
 
     </div>
