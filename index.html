@@ -70,6 +70,11 @@
     .grid-container-wrapper {
       position: relative;
     }
+    
+    .clear {
+      height: 50px;
+      margin-left: -40px;
+    }
 
     .grid-item-e {
       background-color: #e05956;
@@ -111,6 +116,7 @@
 
     .grid-item-p {
       background-color: #2e2e2e;
+      background-position: center;
       font-size: 200px;
       font-weight: 600;
       text-align: center;
@@ -125,14 +131,16 @@
 
     .grid-item-p:hover {
       background-image: url(circle.jpeg);
-      background-size: 100%;
+      background-size: cover;
       background-repeat: no-repeat;
+      background-position: center;
       object-fit: cover;
       opacity: 0.5;
     }
 
     .grid-item-l {
       background-color: #427193;
+      background-position: 70% 70%;
       color: white;
       font-size: 200px;
       font-weight: 600;
@@ -143,8 +151,9 @@
 
     .grid-item-l:hover {
       background-image: url(dark-cup.webp);
-      background-size: 100%;
+      background-size: cover;
       background-repeat: no-repeat;
+      background-position: 70% 70%;
       object-fit: cover;
       opacity: 0.5;
     }
@@ -187,6 +196,7 @@
 
     .grid-item-r {
       background-color: #68a78e;
+      background-position: bottom;
       color: white;
       font-size: 200px;
       font-weight: 600;
@@ -197,7 +207,7 @@
 
     .grid-item-r:hover {
       background-image: url(reg-entrance.webp);
-      background-size: 100%;
+      background-size: cover;
       background-repeat: no-repeat;
       object-fit: cover;
       object-position: bottom;
@@ -206,6 +216,7 @@
 
     .grid-item-ii {
       background-color: #427193;
+      background-position: center;
       color: white;
       font-size: 200px;
       font-weight: 600;
@@ -218,12 +229,14 @@
       background-image: url(latte-coffee.jpeg);
       background-size: cover;
       background-repeat: no-repeat;
+      background-position: center;
       object-fit: cover;
       opacity: 0.5;
     }
 
     .grid-item-s {
       background-color: #e05956;
+      background-position: center;
       color: white;
       font-size: 200px;
       font-weight: 600;
@@ -234,8 +247,9 @@
 
     .grid-item-s:hover {
       background-image: url(trio.jpeg);
-      background-size: 100%;
+      background-size: cover;
       background-repeat: no-repeat;
+      background-position: center;
       object-fit: cover;
       opacity: 0.5;
     }
@@ -259,7 +273,6 @@
       padding: 10px;
       font-size: 60px;
       font-weight: bold;
-      text-shadow: 1px 1px 2px grey;
       background: white;
       border-radius: 10px;
     }
@@ -267,7 +280,6 @@
     .what p {
       font-size: 20px;
       margin: 30px 0;
-      text-shadow: 1px 1px 2px grey;
       width: 80%;
       background: white;
       padding: 10px;
@@ -379,8 +391,9 @@
       font-family: "Roboto Mono", serif;
       font-weight: bold;
       text-align: center;
-      padding-top: 40px;
-      font-size: 40px;
+      padding-top: 50px;
+      font-size: 50px;
+      text-shadow: 1px 1px 1px grey;
     }
     
     #insta {
@@ -403,6 +416,9 @@
           <div class="nav-link-wrapper">
             <a href="https://www.lib.uchicago.edu/spaces/ex-libris-cafe/" target="_blank">About</a>
           </div>
+        </div>
+        <div class="middle">
+        	<img class="clear" src="clear-logo.svg" alt="Ex Libris Logo">
         </div>
         <div class="right-side">
           <div class="brand">
